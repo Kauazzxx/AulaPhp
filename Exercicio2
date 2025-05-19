@@ -1,0 +1,20 @@
+<?php
+// Cria um array com cinco números
+$numeros = [10, 25, 5, 15, 30];
+
+// Inicializa a variável para armazenar a soma
+$soma = 0;
+
+// Percorre o array e adiciona cada número à variável $soma
+for ($i = 0; $i < count($numeros); $i++) {
+  $soma += $numeros[$i];
+}
+
+// Exibe a soma dos valores
+echo "A soma dos elementos do array é: " . $soma . "\n";
+
+echo "\nOutra forma de somar usando array_sum():\n";
+// A função array_sum() já faz o trabalho de somar os elementos de um array numérico
+$somaAlternativa = array_sum($numeros);
+echo "A soma dos elementos do array (usando array_sum()) é: " . $somaAlternativa . "\n";
+?>
