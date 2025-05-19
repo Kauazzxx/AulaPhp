@@ -1,0 +1,18 @@
+//1. Criar e exibir um array de frutas:
+<?php
+// Cria um array com cinco nomes de frutas
+$frutas = ["Maçã", "Banana", "Laranja", "Morango", "Uva"];
+
+// Exibe todos os elementos usando um loop for
+echo "Frutas no array:\n";
+for ($i = 0; $i < count($frutas); $i++) {
+  echo $frutas[$i] . "\n";
+}
+
+echo "\nOutra forma de exibir usando foreach:\n";
+// Exibe todos os elementos usando um loop foreach (mais simples e recomendado para arrays)
+foreach ($frutas as $fruta) {
+  echo $fruta . "\n";
+}
+?>
+
