@@ -1,0 +1,33 @@
+<?php
+// Cria o primeiro array de números
+$array1 = [2, 4, 6, 8, 10];
+
+// Cria o segundo array de números
+$array2 = [1, 3, 5, 7, 9];
+
+// Cria um array vazio para receber a soma
+$arraySoma = [];
+
+// Verifica qual array é o maior para garantir que todos os elementos sejam processados
+$tamanho = max(count($array1), count($array2));
+
+// Percorre os arrays, somando os elementos correspondentes e adicionando ao $arraySoma
+for ($i = 0; $i < $tamanho; $i++) {
+  // Se o índice existir no $array1, pega o valor, senão considera 0
+  $valor1 = isset($array1[$i]) ? $array1[$i] : 0;
+
+  // Se o índice existir no $array2, pega o valor, senão considera 0
+  $valor2 = isset($array2[$i]) ? $array2[$i] : 0;
+
+  // Adiciona a soma ao $arraySoma
+  $arraySoma[$i] = $valor1 + $valor2;
+}
+
+// Exibe o resultado no console
+echo "Array 1: ";
+print_r($array1);
+echo "Array 2: ";
+print_r($array2);
+echo "Soma dos elementos dos dois arrays: ";
+print_r($arraySoma);
+?>
